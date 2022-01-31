@@ -4,8 +4,8 @@ import { signIn, useSession } from 'next-auth/client'
 import { mocked } from 'ts-jest/utils'
 import { useRouter } from 'next/router'
 
-jest.mock('next-auth/client')
 jest.mock('next/router')
+jest.mock('next-auth/client')
 
 describe('SubscribeButton component', () => {
   it('renders correctly', () => {
